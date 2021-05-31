@@ -64,12 +64,6 @@ class PlayingCardContentView extends StatelessWidget {
               )),
           Positioned(
               right: 0,
-              bottom: height * 0.035714 + labelHeight + height * .01,
-              width: sideSpace,
-              height: labelSuitHeight,
-              child: RotatedBox(quarterTurns: 2, child: suitBuilder(context))),
-          Positioned(
-              right: 0,
               bottom: height * 0.035714,
               width: sideSpace,
               height: labelHeight,
@@ -83,12 +77,6 @@ class PlayingCardContentView extends StatelessWidget {
                     overflow: TextOverflow.visible,
                     textAlign: TextAlign.center,
                   ))),
-          Positioned(
-              left: 0,
-              top: height * 0.035714 + labelHeight + height * .01,
-              width: sideSpace,
-              height: labelSuitHeight,
-              child: suitBuilder(context)),
         ]);
       });
 }
