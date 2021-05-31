@@ -36,7 +36,7 @@ class PlayingCardView extends StatelessWidget {
   /// of the cards look as you so choose.
   const PlayingCardView(
       {Key key,
-      @required this.card,
+      this.card,
       this.style,
       this.showBack = false,
       this.shape,
