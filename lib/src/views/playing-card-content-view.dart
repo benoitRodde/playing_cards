@@ -16,8 +16,8 @@ class PlayingCardContentView extends StatelessWidget {
       this.valueText,
       this.valueTextStyle,
       this.suitBuilder,
-      this.top,
-      this.left,
+      this.top = 0,
+      this.left = 10,
       this.center})
       : super(key: key);
 

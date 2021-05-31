@@ -30,9 +30,14 @@ class PlayingCardViewStyle {
   /// Use this to override the style for each suit.
   final Map<Suit, SuitStyle> suitStyles;
 
+  final double top;
+
+  final double left;
+
   /// The back of the card.
   final Widget Function(BuildContext context) cardBackContentBuilder;
 
   /// Creates a style. One style can be used for an entire deck.
-  const PlayingCardViewStyle({this.suitStyles, this.cardBackContentBuilder});
+  const PlayingCardViewStyle(
+      {this.suitStyles, this.cardBackContentBuilder, this.top, this.left});
 }

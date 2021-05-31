@@ -32,9 +32,6 @@ class PlayingCardView extends StatelessWidget {
   /// These fields are passed to the underlying material card.
   final double elevation;
 
-  final double top;
-  final double left;
-
   /// Card is required. Style can be provided to override as little or as much
   /// of the cards look as you so choose.
   const PlayingCardView(
@@ -43,8 +40,6 @@ class PlayingCardView extends StatelessWidget {
       this.style,
       this.showBack = false,
       this.shape,
-      this.top,
-      this.left,
       this.elevation})
       : super(key: key);
 
@@ -59,8 +54,8 @@ class PlayingCardView extends StatelessWidget {
         valueText: card.value.shortName,
         valueTextStyle: reconciled.suitStyles[card.suit].style,
         suitBuilder: reconciled.suitStyles[card.suit].builder,
-        top: top,
-        left: left,
+        top: reconciled.top,
+        left: reconciled.left,
         center:
             reconciled.suitStyles[card.suit].cardContentBuilders[card.value],
       );
